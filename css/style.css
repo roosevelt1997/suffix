@@ -160,11 +160,12 @@ nav li:first-child{
     display: flex;
     flex-wrap: wrap;
    /*margin: 5rem;*/
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     color: var(--black);
-    margin: 6rem;
+    margin: 2rem;
     justify-content: space-between;
+    padding: 2rem 3rem 2rem;
     
 
 
@@ -184,24 +185,22 @@ nav li:first-child{
     justify-content: center;
     align-items: center;
     height: 450px !important;
-    width: 400px !important;
+    width: 350px !important;
     background-color: white;
     box-shadow: 20px 20px 20px #eee;
     margin-top: 50px;
-    border: solid 0.5px #eee;
+    border: solid 5px #eee;
     position: relative;
     overflow: hidden;
     flex-direction: column;
     padding: 10px;
-
-
-    
+    border-radius: 10px;
 }
 
 .container .text{
     text-align: left;
-    border: 2px solid rebeccapurple;
-    padding: 20px;
+
+    padding: 10px;
     width: 100%;
     height: auto;
     margin: 0;
@@ -217,6 +216,7 @@ nav li:first-child{
 .container .text .price{
     border-top: 2px solid #eee;
     padding-top: 10px;
+    border-bottom: 2px solid #eee;
 }
 
 
@@ -235,13 +235,14 @@ nav li:first-child{
 .container video{
     width: 100%;
     height: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 
-.box img{
-    height: 300px;
-    width: 300px;
+.container img{
+    width: 100%;
+    height: 100%;
+    
     
 }
 
