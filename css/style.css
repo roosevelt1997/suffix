@@ -116,8 +116,8 @@ nav li:first-child{
 }
 
 #newsletter p span{
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     color: #ffbd27;
 }
 
@@ -146,9 +146,18 @@ nav li:first-child{
 }
 
 #newsletter button{
-    background-color: var(--magenta);
-    color: #fff;
-    border-radius: 5px;
+    background-color: var(--aqua);
+    color: black;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
 }
 
 

@@ -251,9 +251,18 @@ nav li:first-child{
 }
 
 #newsletter button{
-    background-color: var(--magenta);
-    color: #fff;
-    border-radius: 5px;
+    background-color: var(--aqua);
+    color: black;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
 }
 
 footer ul{
@@ -345,3 +354,12 @@ footer .copyright{
     color: black;
 }
 
+
+@media (max-width: 768px) {
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
