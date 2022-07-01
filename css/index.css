@@ -15,6 +15,7 @@
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
     box-sizing: border-box;
+   
 }
 *,
 *::before,
@@ -52,33 +53,42 @@ img{
 #suffixlogo img{
     height: 100px;
     width: 100px;
-    
+    margin-left: 1rem;
+   
+
 }
 
 nav{
     font-family: var(--mono);
     font-size: 80%;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 2rem;
+    gap: 15px;
     padding: 0;
     margin: 0;
     flex: row wrap;
     margin-right: 1rem;
-    
+    margin-left: 30rem;
+
 }
 
+/*
 nav li:first-child{
     flex-basis: auto;
     justify-self: left;
     margin-right: auto;
 }
+*/
 
 #intro{
     padding: 4rem 1rem 10rem 1rem;
@@ -189,10 +199,12 @@ nav li:first-child{
 
 .section-white{
     background-color: var(--white);
+    width: 100%;
 }
 
 .section-black{
     background-color: black;
+    width: 100%;
 }
 
 .gradient{
@@ -355,11 +367,81 @@ footer .copyright{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    /*
+    nav{
+        font-family: var(--mono);
+        font-size: 80%;
+        padding: 1rem;
+        width: 375px;
+    }*/
+
+    nav{
+        gap: 10px;
+    }
+    
     nav ul{
+        list-style-type: none;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5px;
+        margin-right: 10px;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        height: 100vh;
+        width: 300px;
+        padding: 80px 0 0 10px;
+        background-color: var(--black);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        border: 2px solid red;
+        
     }
+
+    nav li{
+        margin-bottom: 25px;
+    }
+    
+    
+
+   #categories{
+       max-width: 1200px;
+       margin: 0 auto;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+
+   #clients{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 15px;
+   }
+
+   .client img{
+    width: 50px;
+    height: 50px;
+   }
+
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 15px;
+    padding: 2rem 2rem;
 }
+}
+
+
+
