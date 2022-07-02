@@ -141,9 +141,11 @@ nav li:first-child{
     padding: 10px;
     border-radius: 10px;
 
-    
-    
-    
+}
+
+.container p{
+    color: black;
+    text-align: center;
 }
 
 .container img{
@@ -175,29 +177,18 @@ nav li:first-child{
     justify-content: center;
     gap: 1rem;
     margin: 5rem 2rem 0;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 2rem 2rem;
-   
+    
 }
 
-#categories p{
-    text-align: center;
-    margin-top: 0;
-    color: var(--white);
-
-}
-
-#categories h2{
-    text-align: center;
+#categories a{
     color: black;
-    margin-top: 0.5rem;
 }
 
-#categories h4{
-    text-align: left;
-    color: var(--black);
-    padding: 20px auto;
-}
+
+
+
 
 .client{
     display: flex;
@@ -462,14 +453,16 @@ footer .copyright{
        flex-wrap: wrap;
        padding: 0 0 0;
        border: 2px solid red;
-       justify-content: center;*/
+       justify-content: center;
        display: flex;
        align-items: center;
+       flex-wrap: wrap;*/
        justify-content: center;
-       flex-wrap: wrap;
-
-    
        
+   }
+
+   #categories .container{
+
    }
 
    #intro{
