@@ -161,15 +161,8 @@ nav li:first-child{
     margin-bottom: 0px;
 }
 
-#categories img{
-    width: 200px;
-    height: 200px;
-}
 
-#categories video{
-    width: 200px;
-    height: 200px;
-}
+
 
 #categories{
     display: flex;
@@ -229,7 +222,7 @@ nav li:first-child{
 #newsletter{
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     color: black;
     background-image: url("../Assets/b14.png");
@@ -400,7 +393,7 @@ footer .copyright{
         gap: 5px;
         margin-right: 10px;
         position: fixed;
-        right: -300px;
+        right: -310px;
         top: 0;
         height: 100vh;
         width: 300px;
@@ -457,19 +450,31 @@ footer .copyright{
        display: flex;
        align-items: center;
        flex-wrap: wrap;*/
+       display: flex;
        justify-content: center;
+       flex-wrap: wrap;
+       margin: 0px;
        
    }
 
    #categories .container{
+      margin: 10px;
+      height: 400px !important;
+      width: 300px !important;
 
    }
 
    #intro{
     padding: 0 80px;
-    margin: 0 auto; 
+    margin: 20px auto; 
 }
 
+    #newsletter{
+        padding: 20px;
+    }
+   #newsletter .form{
+    width: 50%;
+   }
 
    footer{
     display: flex;
@@ -501,4 +506,29 @@ footer .copyright{
 }
 
 
+@media (max-width: 477px) {
+    nav{
+        padding: 10px 30px 10px 0;
+    }
 
+    #intro span {
+        
+        font-size: 3rem;
+        margin-top: 0;
+        
+        
+    }
+
+    #intro{
+        padding: 0 20px;
+    }
+
+    
+    #newsletter{
+        padding: 40px 20px;
+    }
+
+    #newsletter .form{
+        width: 100%;
+    }
+}
